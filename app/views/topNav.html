@@ -1,32 +1,21 @@
-<md-toolbar>
+<md-toolbar flex>
     <div class="md-toolbar-tools">
         <md-button ng-click="vm.toggleSideNav()" hide-gt-sm class="md-icon-button">
             <md-icon md-svg-icon="menu"></md-icon>
         </md-button>
-        <h1>
-            Contact Manager
-        </h1>
-        <md-fab-speed-dial
-                md-direction="down"
-                class="md-fling md-fab-top-right">
-            <md-fab-trigger>
-                <md-button class="md-fab">
-                    <md-icon md-svg-icon="menu"></md-icon>
-                </md-button>
-            </md-fab-trigger>
-            <md-fab-actions>
-                <md-button class="md-fab md-raised md-mini"
-                           ng-click="vm.showContactOptions($event)">
-
-                    <ng-md-icon icon="face"></ng-md-icon>
-                    <md-tooltip md-direction="left">Contact</md-tooltip>
-                </md-button>
-                <md-button class="md-fab md-raised md-mini"
-                           ng-click="vm.clearNotes($event)">
-                    <ng-md-icon icon="clear_all"></ng-md-icon>
-                    <md-tooltip md-direction="left">Clear all notes</md-tooltip>
-                </md-button>
-            </md-fab-actions>
-        </md-fab-speed-dial>
+        <h1>Matt Morris</h1>
     </div>
 </md-toolbar>
+<md-tabs md-dynamic-height=""
+         md-stretch-tabs="always"
+         md-border-bottom="">
+    <md-tab label="Skills">
+       <skills-tab></skills-tab>
+    </md-tab>
+    <md-tab label="Notes">
+        <md-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aperiam architecto asperiores, assumenda beatae blanditiis consectetur cupiditate ea eveniet fuga, laboriosam laborum maxime molestias natus perspiciatis sunt ullam. Doloremque.</md-content>
+    </md-tab>
+    <md-tab label="Notes">
+        <md-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam asperiores, culpa eveniet iure modi nisi nobis quaerat suscipit voluptatem. At corporis et laudantium magnam molestias natus quia! Aliquam, quia.</md-content>
+    </md-tab>
+</md-tabs>
