@@ -12,6 +12,10 @@
     "angular-mocks": "~1.4.0",
     "html5-boilerplate": "~5.2.0",
     "angular-material": "~1.0.5",
-    "angular-material-icons": "~0.6.0"
+    "angular-material-icons": "~0.6.0",
+    "angular-materialize": "~0.1.2",
+    "Materialize": "materialize#~0.97.5",
+    "ng-materialize": "~0.1.2",
+    "Waves": "waves#~0.7.5"
   }
 }
