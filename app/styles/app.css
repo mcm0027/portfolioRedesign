@@ -64,27 +64,20 @@ body {
 
 /*Skillbars*/
 
+#skillBarsContainer {
+  height: 80vh;
+}
+
 .skillbar {
   font-family: 'Open Sans', 'sans-serif';
   position:relative;
   display:block;
   margin-bottom:15px;
   width:100%;
-  background:#eee;
   height:35px;
   border-radius:3px;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
-  -webkit-transition:0.4s linear;
-  -moz-transition:0.4s linear;
-  -ms-transition:0.4s linear;
-  -o-transition:0.4s linear;
-  transition:0.4s linear;
-  -webkit-transition-property:width, background-color;
-  -moz-transition-property:width, background-color;
-  -ms-transition-property:width, background-color;
-  -o-transition-property:width, background-color;
-  transition-property:width, background-color;
 }
 
 .skillbar-title {
@@ -117,9 +110,40 @@ body {
   border-bottom-left-radius:3px;
 }
 
+.expert {
+  background: #80cbc4;
+}
+
+.expert .skillbar-title,
+.expert .skillbar-bar {
+  background: #009688;
+  width: 85%;
+}
+
+.proficient {
+  background: #b0bec5;
+}
+
+.proficient .skillbar-title,
+.proficient .skillbar-bar {
+  background: #607d8b;
+  width: 70%;
+}
+
+.familiar {
+  background: #bcaaa4 ;
+}
+
+.familiar .skillbar-title,
+.familiar .skillbar-bar {
+  background: #795548;
+  width: 60%;
+}
+
+
 .skillbar-bar {
   height:35px;
-  width:0px;
+  width:0;
   background:#6adcfa;
   border-radius:3px;
   -moz-border-radius:3px;
