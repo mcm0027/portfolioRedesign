@@ -4,19 +4,19 @@
         .module('myApp', [
             'ngRoute',
             'myApp.version',
-            'ngMaterialize'
+            'ngMaterialize',
+            'duScroll'
         ])
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/view1'});
+        $routeProvider.otherwise({redirectTo: '/'});
 
     }])
-    .controller('myApp.mainController', [
+    .controller('mainController', [
         mainController]);
 
 
 
     function mainController(){
-
 
     }
 

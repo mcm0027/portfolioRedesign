@@ -16,6 +16,9 @@
     "angular-materialize": "~0.1.2",
     "Materialize": "materialize#~0.97.5",
     "ng-materialize": "~0.1.2",
-    "Waves": "waves#~0.7.5"
+    "Waves": "waves#~0.7.5",
+    "angular-scroll": "~1.0.0",
+    "angular-parallax": "~0.0.2",
+    "ng-simple-parallax": "*"
   }
 }

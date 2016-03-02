@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic' rel='stylesheet' type='text/css'>
   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="bower_components/ng-materialize/dist/ng-materialize.css">
   <link rel="stylesheet" href="styles/app.css">
@@ -24,12 +25,58 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <header>
+    <!-- Main Nav -->
+    <div class="z-depth-1">
+      <nav role="navigation" class="container white z-depth-0">
+        <div class="nav-wrapper col s12" id="home">
+          <a href="#home" class="col s2 offset-s3 brand-logo blue-grey-text text-darken-2">Matt Morris</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="blue-grey-text" du-smooth-scroll href="#skills">Skills</a></li>
+            <li><a class="blue-grey-text" href="#portfolio">Portfolio</a></li>
+            <li><a class="blue-grey-text" href="#about">About Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  <top-nav> </top-nav>
+  <div id="codeBackground" class="valign-wrapper backgroundImage">
+    <div class="card z-depth-2">
+      <h1 class="valign right-align blue-grey-text text-darken-4">Hi, I'm Matt</h1>
+    </div>
+  </div>
 
-  <skills> </skills>
 
+  <skills id="skills"> </skills>
 
+  <div id="skillsBackground" class="valign-wrapper backgroundImage">
+    <div class="card teal lighten-3 z-depth-2">
+      <h1 class="valign right-align blue-grey-text text-darken-4">my skills</h1>
+    </div>
+  </div>
+
+<skill-bars id="skillbars"></skill-bars>
+  <div class="skillbar clearfix " data-percent="65%">
+    <div class="skillbar-title" style="background: #88cd2a;"><span>HTML5</span></div>
+    <div class="skillbar-bar" style="background: #88cd2a;"></div>
+    <div class="skill-bar-percent">65%</div>
+  </div>
+  <!---  CSS --->
+  <div class="skillbar clearfix " data-percent="85%">
+    <div class="skillbar-title" style="background: #00a8ff;"><span>CSS</span></div>
+    <div class="skillbar-bar" style="background: #00a8ff;"></div>
+    <div class="skill-bar-percent">85%</div>
+  </div>
+  <!---- /CSS --->
+  <!----- jQuery  ------->
+  <div class="skillbar clearfix " data-percent="60%">
+    <div class="skillbar-title" style="background: #00a8ff;"><span>J</span></div>
+    <div class="skillbar-bar" style="background: #00a8ff;"></div>
+    <div class="skill-bar-percent">60%</div>
+  </div>
+  <!----- /jQuery  ------->
   <div ng-view></div>
 
 
@@ -39,11 +86,13 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
-
   <script src="bower_components/ng-materialize/dist/ng-materialize.js"></script>
+  <script src="bower_components/angular-parallax/scripts/angular-parallax.js"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.js"></script>
   <script src="scripts/index.js"></script>
   <script src="scripts/topNav.js"></script>
   <script src="scripts/skills.js"></script>
+  <script src="scripts/skillBars.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
