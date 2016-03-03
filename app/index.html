@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/nz-animate/dist/nzAnimate.min.css">
   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="bower_components/ng-materialize/dist/ng-materialize.css">
   <link rel="stylesheet" href="styles/app.css">
@@ -20,7 +21,8 @@
 <body ng-app="myApp"
       ng-cloak
       ng-controller="mainController as ctrl"
-      layout="column">
+      layout="column"
+      class="grey lighten-5">
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -28,14 +30,14 @@
   <header>
     <!-- Main Nav -->
     <div class="z-depth-1">
-      <nav role="navigation" class="container white z-depth-0">
+      <nav role="navigation" class="container grey lighten-5 z-depth-0">
         <div class="nav-wrapper col s12" id="home">
           <a href="#home" class="col s2 offset-s3 brand-logo blue-grey-text text-darken-2">Matt Morris</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a class="blue-grey-text" du-smooth-scroll href="#skills">Skills</a></li>
+            <li><a class="blue-grey-text" du-smooth-scroll href="#stengths">Strengths</a></li>
             <li><a class="blue-grey-text" du-smooth-scroll href="#skillBars">Skills bars</a></li>
-            <li><a class="blue-grey-text" href="#portfolio">Portfolio</a></li>
+            <li><a class="blue-grey-text" du-smooth-scroll href="#myWork">My work</a></li>
             <li><a class="blue-grey-text" href="#about">About Me</a></li>
           </ul>
         </div>
@@ -44,13 +46,13 @@
   </header>
 
   <div id="codeBackground" class="valign-wrapper backgroundImage">
-    <div class="card z-depth-2">
+    <div class="card z-depth-2 grey lighten-5">
       <h1 class="valign right-align blue-grey-text text-darken-4">Hi, I'm Matt</h1>
     </div>
   </div>
 
 
-  <skills id="skills"> </skills>
+  <strengths id="stengths"> </strengths>
 
   <div id="skillsBackground" class="valign-wrapper backgroundImage">
     <div class="card teal lighten-3 z-depth-2">
@@ -59,6 +61,15 @@
   </div>
 
   <skill-bars id="skillBars"></skill-bars>
+
+
+  <div id="myWorkBackground" class="valign-wrapper backgroundImage">
+    <div class="card teal lighten-3 z-depth-2">
+      <h1 class="valign right-align blue-grey-text text-darken-4">my work</h1>
+    </div>
+  </div>
+
+  <my-work id="myWork"></my-work>
 
   <div ng-view></div>
 
@@ -73,8 +84,8 @@
   <script src="bower_components/angular-parallax/scripts/angular-parallax.js"></script>
   <script src="bower_components/angular-scroll/angular-scroll.js"></script>
   <script src="scripts/index.js"></script>
-  <script src="scripts/topNav.js"></script>
-  <script src="scripts/skills.js"></script>
+  <script src="scripts/myWork.js"></script>
+  <script src="scripts/strengths.js"></script>
   <script src="scripts/skillBars.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>

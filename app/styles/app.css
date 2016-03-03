@@ -32,7 +32,13 @@ body {
   padding: 0;
 }
 
+.content-container {
+  min-height: 90vh;
+}
 
+.container-card {
+  margin: auto;
+}
 /*Parallax Images and Text*/
 
 #codeBackground {
@@ -41,6 +47,10 @@ body {
 
 #skillsBackground {
   background-image: url('../assets/img/table_talk.jpg');
+}
+
+#myWorkBackground {
+  background-image: url("../assets/img/responsive-slide-tall-min.jpg");
 }
 
 .backgroundImage{
@@ -62,6 +72,9 @@ body {
   font-weight: bolder;
 }
 
+#myWorkBackground div {
+  margin-left: 60vw;
+}
 /*Skillbars*/
 
 #skillBarsContainer {

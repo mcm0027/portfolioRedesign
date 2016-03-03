@@ -19,6 +19,7 @@
     "Waves": "waves#~0.7.5",
     "angular-scroll": "~1.0.0",
     "angular-parallax": "~0.0.2",
-    "ng-simple-parallax": "*"
+    "ng-simple-parallax": "*",
+    "nz-animate": "~1.0.1"
   }
 }
