@@ -5,7 +5,7 @@
     }
 
     angular.module('myApp').component('strengths', {
-        templateUrl: './views/strengths.html',
+        templateUrl: './app/views/strengths.html',
         controller: StrengthsController,
         bindings: {
             //hero: '='

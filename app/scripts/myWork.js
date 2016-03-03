@@ -5,7 +5,7 @@
     }
 
     angular.module('myApp').component('myWork', {
-        templateUrl: './views/myWork.html',
+        templateUrl: './app/views/myWork.html',
         controller: MyWorkController,
         bindings: {
             //hero: '='
