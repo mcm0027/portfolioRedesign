@@ -1,12 +1,11 @@
-<div class="content-container grey lighten-5 valign-wrapper z-depth-3" id="myWorkContainer">
-    <div class="valign container row">
-        <div class="row heading-container" id="portfolio-header">
+<div class="content-container grey lighten-5 z-depth-3" id="myWorkContainer">
+    <div class="orange heading-container z-depth-1">
+        <div class="container row" id="portfolio-header">
             <div class="col s12">
-                <h2>Portfolio</h2>
-                <h3>Select a project type to filter the view.</h3>
+                <h5 class="center-align">Select a project type to filter the view.</h5>
             </div>
-            <ul class="filter">
-                <li class="col s2 offset s1"><a href="" ng-click="filter = 'all'; hideItems()"><i class="fa fa-circle-o"></i>  All</a></li>
+            <ul class="filter white-text row">
+                <li class="col s2 offset s2"><a href="" ng-click="filter = 'all'; hideItems()"><i class="fa fa-circle-o"></i>  All</a></li>
                 <li class="col s2"><a href="" ng-click="filter = 'CSS';"><i class="fa fa-pencil"></i>  CSS</a></li>
                 <li class="col s2"><a href="" ng-click="filter = 'API'"><i class="fa fa-server"></i>  APIs</a></li>
                 <li class="col s2"><a href="" ng-click="filter = 'data'"><i class="fa fa-database"></i>  Data Manipulation</a></li>
@@ -14,20 +13,19 @@
             </ul>
         </div>
     </div>
-    <div class="row">
+    <div class="container row">
         <ul class="portfolio-list">
-            <li ng-repeat="project in projects">
-                <!-- Item 1 -->
-                <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="col-md-4 col-sm-6r animate-filter">
+            <li ng-repeat="project in vm.projects">
+                <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="col s4 z-depth-1 vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card">
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./img/project_screenshots/{{project.image}}" alt="{{project.title}}"></a>
+                            <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
                         </div>
                         <div class="portfolio-info">
                             <ul>
                                 <li class="portfolio-project-name"><strong>{{project.title}}</strong></li>
                                 <li>{{project.shortTech}}</li>
-                                <li class="read-more"><a ng-click="buttonHide(project.id, project.type)"class="btn">Read more</a></li>
+                                <!--<li class="read-more center-align"><a ng-click="buttonHide(project.id, project.type)"class="btn">Read more</a></li>-->
                             </ul>
                         </div>
                     </div>
