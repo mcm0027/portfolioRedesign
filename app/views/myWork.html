@@ -1,5 +1,5 @@
 <div class="content-container grey lighten-5 z-depth-3" id="myWorkContainer">
-    <div class="orange heading-container z-depth-1">
+    <div class="teal lighten-4 heading-container z-depth-1">
         <div class="container row" id="portfolio-header">
             <div class="col s12">
                 <h5 class="center-align">Select a project type to filter the view.</h5>
@@ -15,19 +15,15 @@
     </div>
     <div class="container row">
         <ul class="portfolio-list">
-            <li ng-repeat="project in vm.projects">
-                <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="col s4 z-depth-1 vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
-                        </div>
-                        <div class="portfolio-info">
-                            <ul>
-                                <li class="portfolio-project-name"><strong>{{project.title}}</strong></li>
-                                <li>{{project.shortTech}}</li>
-                                <!--<li class="read-more center-align"><a ng-click="buttonHide(project.id, project.type)"class="btn">Read more</a></li>-->
-                            </ul>
-                        </div>
+            <li ng-repeat="project in vm.projects" class="col s4">
+                <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="z-depth-1 vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card">
+                    <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
+                    <div class="portfolio-info">
+                        <ul class="valign-wrapper">
+                            <li class="portfolio-project-name center-align valign"><strong>{{project.title}}</strong></li>
+                            <li class="center-align valign">{{project.shortTech}}</li>
+                            <!--<li class="read-more center-align"><a ng-click="buttonHide(project.id, project.type)"class="btn">Read more</a></li>-->
+                        </ul>
                     </div>
                 </div>
             </li>
