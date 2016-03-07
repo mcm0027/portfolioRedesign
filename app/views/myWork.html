@@ -18,10 +18,10 @@
             <li ng-repeat="project in vm.projects" class="col s4">
                 <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="z-depth-1 vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card">
                     <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
-                    <div class="portfolio-info">
-                        <ul class="valign-wrapper">
-                            <li class="portfolio-project-name center-align valign"><strong>{{project.title}}</strong></li>
-                            <li class="center-align valign">{{project.shortTech}}</li>
+                    <div class="portfolio-info valign-wrapper">
+                        <ul class="valign">
+                            <li class="portfolio-project-name center-align"><strong>{{project.title}}</strong></li>
+                            <li class="center-align">{{project.shortTech}}</li>
                             <!--<li class="read-more center-align"><a ng-click="buttonHide(project.id, project.type)"class="btn">Read more</a></li>-->
                         </ul>
                     </div>
