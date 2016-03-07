@@ -41,7 +41,7 @@ body {
 }
 /*Parallax Images and Text*/
 
-#codeBackground {
+#codeBackground .backgroundImage {
   background-image: url('../assets/img/code_laptop.jpg');
 }
 
