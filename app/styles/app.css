@@ -193,9 +193,12 @@ body {
   width: 100vw;
 }
 
+.heading-container a {
+  color: #ffffff;
+}
+
 .filter {
   margin-top: 0;
-
 }
 
 .portfolio-card {
@@ -229,6 +232,10 @@ body {
   -o-transition: opacity 1s linear;
   -ms-transition: opacity 1s linear;
   transition: opacity 1s linear;
+}
+
+.portfolio-info ul {
+  padding-top: 12%;
 }
 
 .portfolio-list li:hover .portfolio-info {
