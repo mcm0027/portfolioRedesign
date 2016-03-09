@@ -1,21 +1,21 @@
 <div class="content-container grey lighten-5 z-depth-3" id="myWorkContainer">
-    <div class="cyan lighten-2 heading-container z-depth-1">
-        <div class="container row" id="portfolio-header">
-            <div class="col s12">
-                <h5 class="center-align">Select a project type to filter the view.</h5>
-            </div>
-            <ul class="filter white-text row">
-                <li class="col s2 offset s2"><a href="" ng-click="filter = 'all'; hideItems()"><i class="fa fa-circle-o"></i>  All</a></li>
-                <li class="col s2"><a href="" ng-click="filter = 'CSS';"><i class="fa fa-pencil"></i>  CSS</a></li>
-                <li class="col s2"><a href="" ng-click="filter = 'API'"><i class="fa fa-server"></i>  APIs</a></li>
-                <li class="col s2"><a href="" ng-click="filter = 'data'"><i class="fa fa-database"></i>  Data Manipulation</a></li>
-                <li class="col s2"><a href="" ng-click="filter = 'JS'"><i class="fa fa-coffee"></i>  JavaScript</a></li>
-            </ul>
-        </div>
-    </div>
+    <!--<div class="cyan lighten-2 heading-container z-depth-1">-->
+        <!--<div class="container row" id="portfolio-header">-->
+            <!--<div class="col s12">-->
+                <!--<h5 class="center-align">Select a project type to filter the view.</h5>-->
+            <!--</div>-->
+            <!--<ul class="filter white-text row">-->
+                <!--<li class="col s1"><a href="" ng-click="filter = 'all'; hideItems()"><i class="fa fa-circle-o"></i>  All</a></li>-->
+                <!--<li class="col s1"><a href="" ng-click="filter = 'CSS';"><i class="fa fa-pencil"></i>  CSS</a></li>-->
+                <!--<li class="col s1"><a href="" ng-click="filter = 'API'"><i class="fa fa-server"></i>  APIs</a></li>-->
+                <!--<li class="col s1"><a href="" ng-click="filter = 'data'"><i class="fa fa-database"></i>  Data</a></li>-->
+                <!--<li class="col s1"><a href="" ng-click="filter = 'JS'"><i class="fa fa-coffee"></i>  JavaScript</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="container row" ng-init="z='z-depth-1'">
         <ul class="portfolio-list">
-            <li ng-repeat="project in vm.projects" class="col s6 m4" ng-mouseenter="z='z-depth-2'" ng-mouseleave="z='z-depth-1'">
+            <li ng-repeat="project in vm.projects" class="col m6 l4" ng-mouseenter="z='z-depth-2'" ng-mouseleave="z='z-depth-1'">
                 <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card" ng-class="z">
                     <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
                     <div class="portfolio-info valign-wrapper hvr-rectangle-out">

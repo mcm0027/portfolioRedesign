@@ -65,6 +65,14 @@ body {
 
 #myWorkBackground .backgroundImage div{
   background-color: #4dd0e1;
+  margin-left: 60vw;
+}
+
+@media screen and (max-width: 601px) {
+  #myWorkBackground .backgroundImage div,
+  .backgroundImage div {
+    margin: auto;
+  }
 }
 
 .backgroundImage{
@@ -204,6 +212,11 @@ body {
   margin-top: 0;
 }
 
+.portfolio-list {
+  padding-top: 5em;
+  margin-top: 0;
+}
+
 .portfolio-card {
   position: relative;
   padding: 0;
@@ -236,7 +249,7 @@ body {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
-  background: #e1e1e1;
+  background: #ffffff;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -262,7 +275,7 @@ body {
 }
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
   color: white;
-  opacity: 1;
+  opacity: .95;
 }
 .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);
