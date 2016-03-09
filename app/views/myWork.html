@@ -13,10 +13,10 @@
             </ul>
         </div>
     </div>
-    <div class="container row">
+    <div class="container row" ng-init="z='z-depth-1'">
         <ul class="portfolio-list">
-            <li ng-repeat="project in vm.projects" class="col s4">
-                <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="z-depth-1 vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card">
+            <li ng-repeat="project in vm.projects" class="col s6 m4" ng-mouseenter="z='z-depth-2'" ng-mouseleave="z='z-depth-1'">
+                <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card" ng-class="z">
                     <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
                     <div class="portfolio-info valign-wrapper hvr-rectangle-out">
                         <ul>

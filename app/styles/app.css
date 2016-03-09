@@ -3,6 +3,7 @@ html,
 body {
   font-family: 'Roboto', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -190,7 +191,9 @@ body {
 /*myWork*/
 
 .heading-container {
-  width: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0 -1em 0 0;
 }
 
 .heading-container a {
@@ -205,9 +208,8 @@ body {
   position: relative;
   padding: 0;
   margin-bottom: 2em;
+  transition: all 1s;
 }
-
-
 
 .portfolio-info {
   position: absolute;
@@ -223,7 +225,7 @@ body {
   padding-top: 12%;
 }
 
-
+/*Hover.css Animation*/
 /* Rectangle Out */
 .hvr-rectangle-out {
   vertical-align: middle;
@@ -260,7 +262,7 @@ body {
 }
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
   color: white;
-  opacity: 0.85;
+  opacity: 1;
 }
 .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);

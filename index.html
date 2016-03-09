@@ -33,17 +33,17 @@
       <nav role="navigation" class="container grey lighten-5 z-depth-0">
         <div class="nav-wrapper col s12" id="home">
           <a href="#home" class="col s2 offset-s3 brand-logo blue-grey-text text-darken-2">Matt Morris</a>
-          <a href="#"  class="button-collapse"><i class="material-icons blue-grey-text">menu</i></a>
+          <a href="#"  class="button-collapse" ng-click="side='fixed'"><i class="material-icons blue-grey-text">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a class="blue-grey-text" du-smooth-scroll href="#stengths">Strengths</a></li>
             <li><a class="blue-grey-text" du-smooth-scroll href="#skillBars">Skills bars</a></li>
             <li><a class="blue-grey-text" du-smooth-scroll href="#myWork">My work</a></li>
             <li><a class="blue-grey-text" href="#about">About Me</a></li>
           </ul>
-          <ul class="side-nav" id="mobile-nav">
-            <li><a class="blue-grey-text" du-smooth-scroll href="#stengths">Strengths</a></li>
-            <li><a class="blue-grey-text" du-smooth-scroll href="#skillBars">Skills bars</a></li>
-            <li><a class="blue-grey-text" du-smooth-scroll href="#myWork">My work</a></li>
+          <ul class="side-nav" ng-class="side" id="mobile-nav">
+            <li><a class="blue-grey-text" du-smooth-scroll href="#stengths" ng-click="side=''">Strengths</a></li>
+            <li><a class="blue-grey-text" du-smooth-scroll href="#skillBars" ng-click="side=''">Skills bars</a></li>
+            <li><a class="blue-grey-text" du-smooth-scroll href="#myWork" ng-click="side=''">My work</a></li>
             <li><a class="blue-grey-text" href="#about">About Me</a></li>
           </ul>
         </div>
@@ -51,35 +51,28 @@
     </div>
   </header>
 
-  <!--<div id="codeBackground" class="valign-wrapper backgroundImage">-->
-    <!--<div class="card z-depth-2 grey lighten-5">-->
-      <!--<h1 class="valign right-align blue-grey-text text-darken-4">Hi, I'm Matt</h1>-->
-    <!--</div>-->
-  <!--</div>-->
+    <background-with-card id="codeBackground">Hi, I'm Matt</background-with-card>
 
-  <background-with-card id="codeBackground" >Hi, I'm Matt</background-with-card>
+    <strengths id="stengths"> </strengths>
 
-  <strengths id="stengths"> </strengths>
+    <background-with-card id="skillsBackground" >my skills</background-with-card>
 
-  <background-with-card id="skillsBackground" >my skills</background-with-card>
+    <skill-bars id="skillBars"></skill-bars>
 
-  <skill-bars id="skillBars"></skill-bars>
+    <background-with-card id="myWorkBackground" >my work</background-with-card>
 
-  <background-with-card id="myWorkBackground" >my work</background-with-card>
+    <my-work id="myWork"></my-work>
 
-  <my-work id="myWork"></my-work>
-
-  <div ng-view></div>
-
+    <div ng-view></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+  <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="app/bower_components/angular/angular.js"></script>
   <script src="app/bower_components/angular-route/angular-route.js"></script>
   <script src="app/bower_components/angular-animate/angular-animate.js"></script>
   <script src="app/bower_components/ng-materialize/dist/ng-materialize.js"></script>
-  <script src="app/bower_components/angular-parallax/scripts/angular-parallax.js"></script>
   <script src="app/bower_components/angular-scroll/angular-scroll.js"></script>
   <script src="app/scripts/projectsService.js"></script>
   <script src="app/scripts/index.js"></script>
