@@ -115,8 +115,8 @@ body {
 
 /*Skillbars*/
 
-#skillBarsContainer {
-  height: 80vh;
+#skillBarsContainer{
+  padding: 2em 0 0 0;
 }
 
 .skillbar {
@@ -169,19 +169,19 @@ body {
 
 .expert .skillbar-title,
 .expert .skillbar-bar {
-  background: #00695c;
-  width: 85%;
+  background: #ffab00;
+  width: 80%;
 }
 
 .proficient .skillbar-title,
 .proficient .skillbar-bar {
-  background: #00897b;
+  background: #ffc400;
   width: 70%;
 }
 
 .familiar .skillbar-title,
 .familiar .skillbar-bar {
-  background: #26a69a;
+  background: #ffd740;
   width: 60%;
 }
 
@@ -273,7 +273,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #00897b;
+  background: #80cbc4;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -285,7 +285,7 @@ body {
 }
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
   color: white;
-  opacity: .85;
+  opacity: .9;
 }
 .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);
