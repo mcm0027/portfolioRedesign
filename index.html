@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html class="no-js">
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Matt Morris - Frontend Developer</title>
@@ -37,29 +38,29 @@
           <ul class="right hide-on-med-and-down">
             <li><a class="blue-grey-text" du-smooth-scroll href="#stengths">Strengths</a></li>
             <li><a class="blue-grey-text" du-smooth-scroll href="#skillBars">Skills bars</a></li>
-            <li><a class="blue-grey-text" du-smooth-scroll href="#myWork">My work</a></li>
+            <li><a class="blue-grey-text" du-smooth-scroll href="#myWork">Work</a></li>
             <li><a class="blue-grey-text" href="#about">About Me</a></li>
           </ul>
           <ul class="side-nav" ng-class="side" id="mobile-nav">
-            <li><a class="blue-grey-text" du-smooth-scroll href="#stengths" ng-click="side=''">Strengths</a></li>
-            <li><a class="blue-grey-text" du-smooth-scroll href="#skillBars" ng-click="side=''">Skills bars</a></li>
-            <li><a class="blue-grey-text" du-smooth-scroll href="#myWork" ng-click="side=''">My work</a></li>
-            <li><a class="blue-grey-text" href="#about">About Me</a></li>
+            <li><a class="blue-grey-text waves-effect waves-teal" du-smooth-scroll href="#stengths" ng-click="side=''">Strengths</a></li>
+            <li><a class="blue-grey-text waves-effect waves-teal" du-smooth-scroll href="#skillBars" ng-click="side=''">Skills bars</a></li>
+            <li><a class="blue-grey-text waves-effect waves-teal" du-smooth-scroll href="#myWork" ng-click="side=''">My work</a></li>
+            <li><a class="blue-grey-text " href="#about">About Me</a></li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
 
-    <background-with-card id="codeBackground">Hi, I'm Matt</background-with-card>
+    <background-with-card id="codeBackground">Hi, I'm <span class="teal-text text-lighten-2">Matt</span></background-with-card>
 
     <strengths id="stengths"> </strengths>
 
-    <background-with-card id="skillsBackground" >my skills</background-with-card>
+    <background-with-card id="skillsBackground" >skills</background-with-card>
 
     <skill-bars id="skillBars"></skill-bars>
 
-    <background-with-card id="myWorkBackground" >my work</background-with-card>
+    <background-with-card id="myWorkBackground" >work</background-with-card>
 
     <my-work id="myWork"></my-work>
 
