@@ -120,7 +120,7 @@ body {
 }
 
 .skillbar {
-  font-family: 'Open Sans', 'sans-serif';
+  font-weight: bold;
   position:relative;
   display:block;
   margin-bottom:15px;
@@ -244,9 +244,23 @@ body {
 }
 
 .portfolio-info ul {
-  padding-top: 12%;
+  padding-top: 5%;
 }
 
+.portfolio-info ul li {
+  padding-top: .5em;
+  font-size: large;
+}
+
+@media screen and (max-width: 601px) {
+  .portfolio-info ul {
+    padding-top: 1em;
+  }
+  .portfolio-info ul li {
+    padding-top: .5em;
+    font-size: large;
+  }
+}
 /*Hover.css Animation*/
 /* Rectangle Out */
 .hvr-rectangle-out {
@@ -273,7 +287,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #80cbc4;
+  background: #ffc400;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -285,7 +299,7 @@ body {
 }
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
   color: white;
-  opacity: .9;
+  opacity: .95;
 }
 .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);
