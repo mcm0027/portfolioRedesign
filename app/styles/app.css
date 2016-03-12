@@ -19,6 +19,17 @@ body {
   transition-duration: 1s;
 }
 
+#navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #fafafa;
+  z-index: 1000;
+}
+
+nav {
+  background-color: #fafafa;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -111,7 +122,6 @@ body {
   margin-bottom: .1em;
   font-weight: bolder;
 }
-
 
 /*Skillbars*/
 
@@ -207,6 +217,10 @@ body {
 
 /*myWork*/
 
+#myWorkContainer .row {
+  margin-bottom: 0;
+}
+
 .heading-container {
   width: 100%;
   margin: 0;
@@ -243,13 +257,10 @@ body {
   padding: 10px;
 }
 
-.portfolio-info ul {
-  padding-top: 5%;
-}
 
 .portfolio-info ul li {
   padding-top: .5em;
-  font-size: large;
+  font-size: medium;
 }
 
 .portfolio-info ul li a {
@@ -270,7 +281,7 @@ body {
   }
   .portfolio-info ul li {
     padding-top: .5em;
-    font-size: large;
+    font-size: medium;
   }
 }
 /*Hover.css Animation*/
@@ -316,4 +327,23 @@ body {
 .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+/* Footer */
+
+.footer a {
+  color: #80CBC4;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.social-links img {
+  width: 4em;
+  margin-right: 2em;
+}
+
+.footer .row {
+  margin-bottom: 0;
 }

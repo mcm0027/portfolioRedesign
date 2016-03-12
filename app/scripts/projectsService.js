@@ -6,13 +6,14 @@ function projectsService () {
         service = {
             flappy: {
                 id: 'flappy',
-                title: 'Bird That Flaps Landing Page',
+                title: 'Bird That Flaps',
                 description1: 'This is the landing page I created for my game, Bird That Flaps. I  use CSS media queries and conditional statements in JavaScript to make the site responsive for multiple devices and screen sizes. The navbar is loaded as traditional links on desktop and tablet sized screens and as a hamburger dropdown on cell phone sized screens. Different image aspect ratios are loaded depending on the aspect ratio of the device screen. Also, inline CSS styling is included in the header to reduce load times on all devices.',
                 description2: 'The site also incorporates some animations using Velocity.js to create a lazy loading effect and a bounce effect on the CTA button to draw attention to the element and reinforce that it is interactive to the user. The carousel is a restyled version of the Slick JQuery plugin, and Jquery Inview is providing inview detection for the animation event triggers. The project demonstrates a responsive design from scratch without the use of a bootstrap template.',
                 date: 'October, 2015',
                 image: 'bird_that_flaps.PNG',
                 type: 'CSS',
                 siteName:'flappybird-landingpage/index.html',
+                gitHub: 'https://github.com/mcm0027/flappy-bird-clone',
                 shortTech: 'HTML, CSS and JQuery'
             },
             countries: {
@@ -24,7 +25,7 @@ function projectsService () {
                 image: 'countries_and_capitals_borderfix.PNG',
                 type: 'data',
                 siteName: 'c-and-c/index.html',
-                shortTech: 'AngularJS, Angular Services, and APIs'
+                shortTech: 'AngularJS and APIs'
             },
             halloween: {
                 id: 'halloween',
@@ -132,7 +133,7 @@ function projectsService () {
                 image: 'waitstaff_calculator.PNG',
                 type: 'JS',
                 siteName: 'WaitstaffCalc/index.html',
-                shortTech: 'AngularJS and Angular Services'
+                shortTech: 'AngularJS'
             },
             calendar: {
                 id: 'calendar',
@@ -143,18 +144,18 @@ function projectsService () {
                 image: 'calendar_directives.PNG',
                 type: 'data',
                 siteName: 'angular-js-calendar/index.html',
-                shortTech: 'Angular, Custom Directives, and Bootstrap'
+                shortTech: 'Angular Custom Directives'
             },
             gMaps: {
                 id: 'gMaps',
-                title: 'Google Maps Global Contact Map',
+                title: 'Global Contact Map',
                 description1: "This app takes a mock user's’ contact data from arrays representing JSON information typically found on the server or an outside source and manipulates it to make it more useful. The app is served data including the user’s name and time zone, and the user’s contacts’ name, location, time zone, and the next scheduled meeting or call time the user has with the contact. The app then displays all of the user’s contacts as markers on a map with text boxes complete with name, location, the contact’s current time, and the time of the next scheduled meeting in the user’s time. The app also populates a table with more in depth information, including the next meeting time in the contact’s local time.",
                 description2: 'The app uses the Google Maps API to display the map information, Moment.js for timezone conversions, Angular for data manipulation and data binding, and Bootstrap for a bit of built in styling. ',
                 date: 'January, 2016',
                 image: 'contact_map.PNG',
                 type: 'data',
                 siteName:'contact_map/index.html',
-                shortTech: 'Angular, Google Maps API, and Moment.js'
+                shortTech: 'Angular and Google Maps API'
             }
         };
         return service;

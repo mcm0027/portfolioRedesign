@@ -1,14 +1,14 @@
-<div class="content-container grey lighten-5 z-depth-3" id="myWorkContainer">
-    <div class="container row" ng-init="z='z-depth-1'">
+<div class="content-container grey lighten-5 z-depth-2" id="myWorkContainer" ng-init="z='z-depth-1'">
+    <div class="container row">
         <ul class="portfolio-list">
-            <li ng-repeat="project in vm.projects" class="col m6 l4" ng-mouseenter="z='z-depth-2'" ng-mouseleave="z='z-depth-1'">
+            <li ng-repeat="project in vm.projects" class="col m6" ng-mouseenter="z='z-depth-2'" ng-mouseleave="z='z-depth-1'">
                 <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card" ng-class="z">
                     <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
                     <div class="portfolio-info valign-wrapper hvr-rectangle-out">
                         <ul class="valign">
-                            <li class="portfolio-project-name center-align valign"><strong>{{project.title}}</strong></li>
-                            <li class="center-align valign">{{project.shortTech}}</li>
-                            <li class="center-align valign"> <a ng-href="http://mattmorrisdev.net/sites/{{project.siteName}}"><img src="./app/assets/img/shapes.svg"></a> <a ng-href="http://mattmorrisdev.net/sites/{{project.siteName}}"><img src="./app/assets/img/circle.svg"></a></li>
+                            <li class="flow-text portfolio-project-name center-align"><strong>{{project.title}}</strong></li>
+                            <li class="flow-text center-align">{{project.shortTech}}</li>
+                            <li class="flow-text center-align"> <a ng-href="http://mattmorrisdev.net/sites/{{project.siteName}}"><img src="./app/assets/img/shapes.svg"></a> <a ng-if="project.gitHub" ng-href="{{project.gitHub}}"><img src="./app/assets/img/circle.svg"></a></li>
                         </ul>
                     </div>
                 </div>
