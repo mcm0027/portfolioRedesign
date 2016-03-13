@@ -80,7 +80,6 @@ nav {
   background-image: url('../assets/img/table_talk.jpg');
 }
 
-
 #skillsBackground .backgroundImage div{
   background-color: #80cbc4;
 }
@@ -123,6 +122,16 @@ nav {
   font-weight: bolder;
 }
 
+/*About me */
+
+#about-me img {
+  margin-top: 2em;
+}
+
+#about-me > div {
+  margin-top: 3em;
+}
+
 /*Skillbars*/
 
 #skillBarsContainer{
@@ -148,7 +157,7 @@ nav {
   font-weight:bold;
   font-size:13px;
   color:#fff;
-  background:#6adcfa;
+  background:#80CBC4;
   -webkit-border-top-left-radius:3px;
   -webkit-border-bottom-left-radius:4px;
   -moz-border-radius-topleft:3px;
@@ -198,7 +207,7 @@ nav {
 .skillbar-bar {
   height:35px;
   width:0;
-  background:#6adcfa;
+  background:#80CBC4;
   border-radius:3px;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
@@ -271,8 +280,8 @@ nav {
   opacity: 1;
 }
 
-.portfolio-info ul li a img {
-  width: 2em;
+.portfolio-info ul li a {
+  color: #80CBC4;
 }
 
 @media screen and (max-width: 601px) {
@@ -339,9 +348,9 @@ nav {
   color: white;
 }
 
-.social-links img {
-  width: 4em;
+.social-links a {
   margin-right: 2em;
+  display: inline-block;
 }
 
 .footer .row {
