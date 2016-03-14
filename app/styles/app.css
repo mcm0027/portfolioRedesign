@@ -281,9 +281,22 @@ nav {
   opacity: 0;
   padding: 10px;
 }
-@media screen and (max-width: 601px) {
+
+@media screen and (min-width: 471px) and (max-width: 899px) {
   .portfolio-info {
     padding-top: 3.5em;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 470px) {
+  .portfolio-info {
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .portfolio-info {
+    padding-top: 0;
   }
 }
 
