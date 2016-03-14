@@ -70,6 +70,7 @@ nav {
 
 #codeBackground .backgroundImage {
   background-image: url('../assets/img/code_laptop.jpg');
+  min-height: 100vh;
 }
 
 #codeBackground .backgroundImage div{
@@ -105,7 +106,7 @@ nav {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .backgroundImage div {
@@ -123,21 +124,28 @@ nav {
 
 /*About me */
 
-#about-me img {
-  margin-top: 2em;
-  margin-bottom: 2em;
+.special {
+  color: #80CBC4;
+  font-weight: bold;
 }
 
+#about-me img {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
 
 #about-me > div {
   margin-top: 3em;
 }
 
-
 @media screen and (max-width: 601px) {
   #about-me img {
     padding: 0 20%;
   }
+}
+
+#about-me p {
+  text-align: justify;
 }
 
 /*Skillbars*/

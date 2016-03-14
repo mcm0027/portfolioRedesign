@@ -28,33 +28,13 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <main-nav></main-nav>
 
-  <header >
-    <!-- Main Nav -->
-    <div class="z-depth-1 grey lighten-5" id="navbar" >
-      <nav role="navigation" class="container z-depth-0">
-        <div class="nav-wrapper col s12" id="home">
-          <a href="#home" class="col s2 offset-s3 brand-logo blue-grey-text text-darken-2">Matt Morris</a>
-          <a href="#"  class="button-collapse" ng-click="side='fixed'"><i class="material-icons blue-grey-text">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="blue-grey-text" du-smooth-scroll offset="40" href="#aboutMe">About</a></li>
-            <li><a class="blue-grey-text" du-smooth-scroll offset="40" href="#skillBars">Skills bars</a></li>
-            <li><a class="blue-grey-text" du-smooth-scroll offset="40" href="#myWork">Work</a></li>
-          </ul>
-          <ul class="side-nav" ng-class="side" id="mobile-nav">
-            <li><a class="blue-grey-text waves-effect waves-teal" offset="40" du-smooth-scroll href="#aboutMe" ng-click="side=''">About</a></li>
-            <li><a class="blue-grey-text waves-effect waves-teal" offset="40" du-smooth-scroll href="#skillBars" ng-click="side=''">Skills bars</a></li>
-            <li><a class="blue-grey-text waves-effect waves-teal" offset="40" du-smooth-scroll href="#myWork" ng-click="side=''">My work</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+
+  <main-nav></main-nav>
 
   <background-with-card id="codeBackground">Hi, I'm <span class="teal-text text-lighten-2">Matt</span></background-with-card>
 
-  <aboutMe id="aboutMe"> </aboutMe>
+  <about-me id="aboutMe"> </about-me>
 
   <background-with-card id="skillsBackground" >skills</background-with-card>
 
@@ -77,6 +57,7 @@
   <script src="app/bower_components/angular-scroll/angular-scroll.js"></script>
   <script src="app/scripts/projectsService.js"></script>
   <script src="app/scripts/index.js"></script>
+  <script src="app/scripts/mainNav.js"></script>
   <script src="app/scripts/backgroundWithCard.js"></script>
   <script src="app/scripts/myWork.js"></script>
   <script src="app/scripts/aboutMe.js"></script>
