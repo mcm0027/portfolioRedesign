@@ -256,7 +256,7 @@ function projectsService () {
     }
 
     angular.module('myApp').component('strengths', {
-        templateUrl: './app/views/strengths.html',
+        templateUrl: 'app/views/aboutMe.html',
         controller: StrengthsController,
         bindings: {
             //hero: '='
