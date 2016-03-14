@@ -85,12 +85,11 @@ nav {
 }
 
 #myWorkBackground .backgroundImage {
-  background-image: url("../assets/img/responsive-slide-tall-min.jpg");
+  background-image: url("../assets/img/17.jpg");
 }
 
 #myWorkBackground .backgroundImage div{
   background-color: #80cbc4;
-  margin-left: 60vw;
 }
 
 @media screen and (max-width: 601px) {
@@ -126,10 +125,19 @@ nav {
 
 #about-me img {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
+
 
 #about-me > div {
   margin-top: 3em;
+}
+
+
+@media screen and (max-width: 601px) {
+  #about-me img {
+    padding: 0 20%;
+  }
 }
 
 /*Skillbars*/
@@ -265,7 +273,17 @@ nav {
   opacity: 0;
   padding: 10px;
 }
+@media screen and (max-width: 601px) {
+  .portfolio-info {
+    padding-top: 3.5em;
+  }
+}
 
+@media screen and (min-width: 900px) {
+  .portfolio-info {
+    padding-top: 10%;
+  }
+}
 
 .portfolio-info ul li {
   padding-top: .5em;
