@@ -1,0 +1,19 @@
+<div class="content-container grey lighten-5 z-depth-2" id="myWorkContainer" ng-init="z='z-depth-1'">
+    <div class="container row">
+        <ul class="portfolio-list">
+            <li ng-repeat="project in vm.projects" class="col m6" ng-mouseenter="z='z-depth-2'" ng-mouseleave="z='z-depth-1'">
+                <div ng-show="filter === project.type || filter === project.type2 || filter === 'all'" class="vanishIn enter-vanishIn exit-vanishOut speed-700 stagger-100 portfolio-card" ng-class="z">
+                    <a ng-click="buttonHide(project.id, project.type)"><img ng-src="./app/assets/img/project_screenshots/{{project.image}}" alt="{{project.title}}" class="responsive-img"></a>
+                    <div class="portfolio-info valign-wrapper hvr-rectangle-out">
+                        <ul class="valign">
+                            <li class="flow-text portfolio-project-name center-align"><strong>{{project.title}}</strong></li>
+                            <li class="flow-text center-align">{{project.shortTech}}</li>
+                            <li class="flow-text center-align"> <a ng-href="http://mattmorrisdev.net/sites/{{project.siteName}}"><i class="fa fa-eye fa-3x "></i></a> <a ng-if="project.gitHub" ng-href="{{project.gitHub}}"><i class="fa fa-github fa-3x "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+

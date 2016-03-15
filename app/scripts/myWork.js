@@ -1,10 +1,10 @@
 (function(angular) {
     'use strict';
-    function MyWorkController(projectsService, $modal) {
+    var MyWorkController = ['projectsService', function (projectsService) {
         var vm = this;
         vm.projects = projectsService.set();
 
-    }
+    }];
 
     angular.module('myApp').component('myWork', {
         templateUrl: './app/views/myWork.html',
