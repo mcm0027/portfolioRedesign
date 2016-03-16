@@ -1,187 +1,137 @@
 /* app css stylesheet */
 html,
 body {
-  font-family: 'Roboto', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
+  font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .no-js {
-  display: none;
-}
+  display: none; }
 
 .js {
-  display: inherit;
-}
+  display: inherit; }
 
 .side-nav {
   -webkit-transition-property: left;
   transition-property: left;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-}
+  transition-duration: 1s; }
+
+#mobile-nav .fixed {
+  left: 0; }
 
 #navbar {
   position: fixed;
   width: 100%;
   background-color: #fafafa;
-  z-index: 1000;
-}
+  z-index: 1000; }
 
 nav {
-  background-color: #fafafa;
-}
+  background-color: #fafafa; }
 
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
+  padding: 0 0 0.5em; }
 
 .menu:before {
-  content: "[";
-}
+  content: "["; }
 
 .menu:after {
-  content: "]";
-}
+  content: "]"; }
 
 .menu > li {
-  display: inline;
-}
+  display: inline; }
 
 .menu > li:before {
   content: "|";
-  padding-right: 0.3em;
-}
+  padding-right: 0.3em; }
 
 .menu > li:nth-child(1):before {
   content: "";
-  padding: 0;
-}
+  padding: 0; }
 
 .content-container {
-  min-height: 60vh;
-}
+  min-height: 60vh; }
 
 .container-card {
-  margin: auto;
-}
+  margin: auto; }
+
 /*Parallax Images and Text*/
-
 #codeBackground .backgroundImage {
-  background-image: url('../assets/img/code_laptop.jpg');
-  min-height: 100vh;
-}
+  background-image: url("../../app/assets/img/code_laptop.jpg");
+  min-height: 100vh; }
 
-#codeBackground .backgroundImage div{
-  background-color: #fafafa;
-}
+#codeBackground .backgroundImage div {
+  background-color: #fafafa; }
 
 #skillsBackground .backgroundImage {
-  background-image: url('../assets/img/table_talk.jpg');
-}
+  background-image: url("../../app/assets/img/table_talk.jpg"); }
 
-#skillsBackground .backgroundImage div{
-  background-color: #80cbc4;
-}
+#skillsBackground .backgroundImage div {
+  background-color: #80cbc4; }
 
 #myWorkBackground .backgroundImage {
-  background-image: url("../assets/img/17.jpg");
-}
+  background-image: url("../../app/assets/img/17.jpg"); }
 
-#myWorkBackground .backgroundImage div{
-  background-color: #80cbc4;
-}
+#myWorkBackground .backgroundImage div {
+  background-color: #80cbc4; }
 
 @media screen and (max-width: 601px) {
   #myWorkBackground .backgroundImage div,
   #skillsBackground .backgroundImage div,
   #codeBackground .backgroundImage div {
-    margin: auto;
-  }
-}
-
-.backgroundImage{
+    margin: auto; } }
+.backgroundImage {
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-<<<<<<< HEAD
   min-height: 80vh; }
   .backgroundImage div {
     margin-left: 20vw;
     text-align: center; }
-=======
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-  min-height: 80vh;
-}
-
-.backgroundImage div {
-   margin-left: 20vw;
-   text-align: center;
- }
-<<<<<<< HEAD
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .backgroundImage h1 {
   padding-left: .3em;
   padding-right: .3em;
   margin-top: .1em;
   margin-bottom: .1em;
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /*About me */
-
 .special {
-  color: #80CBC4;
-  font-weight: bold;
-}
+  color: #80cbc4;
+  font-weight: bold; }
 
 #about-me img {
   margin-top: 3em;
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
 #about-me > div {
-  margin-top: 3em;
-}
+  margin-top: 3em; }
 
 @media screen and (max-width: 601px) {
   #about-me img {
-    padding: 0 20%;
-  }
-}
-
+    padding: 0 20%; } }
 #about-me p {
-  text-align: justify;
-}
+  text-align: justify; }
 
 /*Skillbars*/
-
-#skillBarsContainer{
-  padding: 2em 0 0 0;
-}
+#skillBarsContainer {
+  padding: 2em 0 0 0; }
 
 .skillbar {
   font-weight: bold;
-  position:relative;
-  display:block;
-  margin-bottom:15px;
-  width:100%;
-  height:35px;
-  border-radius:3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-}
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 35px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
 
 .skillbar-title {
-<<<<<<< HEAD
-<<<<<<< HEAD
   position: absolute;
   top: 0;
   left: 0;
@@ -207,58 +157,19 @@ nav {
     -moz-border-radius-bottomleft: 3px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px; }
-=======
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-  position:absolute;
-  top:0;
-  left:0;
-  font-weight:bold;
-  font-size:13px;
-  color:#fff;
-  background:#80CBC4;
-  -webkit-border-top-left-radius:3px;
-  -webkit-border-bottom-left-radius:4px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
-}
-
-.skillbar-title span {
-  display:block;
-  background:rgba(0, 0, 0, 0.1);
-  padding:0 20px;
-  height:35px;
-  line-height:35px;
-  -webkit-border-top-left-radius:3px;
-  -webkit-border-bottom-left-radius:3px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
-}
-<<<<<<< HEAD
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .expert,
 .proficient,
 .familiar {
-  background: #fff8e1;
-}
+  background: #fff8e1; }
 
 .expert .skillbar-title,
 .expert .skillbar-bar {
   background: #ffab00;
-  width: 80%;
-}
+  width: 80%; }
 
 .proficient .skillbar-title,
 .proficient .skillbar-bar {
-<<<<<<< HEAD
-<<<<<<< HEAD
   background: #ffc44d;
   width: 70%; }
 
@@ -266,92 +177,48 @@ nav {
 .familiar .skillbar-bar {
   background: #ffcd66;
   width: 60%; }
-=======
-  background: #ffc400;
-  width: 70%;
-}
-
-.familiar .skillbar-title,
-.familiar .skillbar-bar {
-  background: #ffd740;
-  width: 60%;
-}
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-=======
-  background: #ffc400;
-  width: 70%;
-}
-
-.familiar .skillbar-title,
-.familiar .skillbar-bar {
-  background: #ffd740;
-  width: 60%;
-}
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .skillbar-bar {
-  height:35px;
-  width:0;
-  background:#80CBC4;
-  border-radius:3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-}
+  height: 35px;
+  width: 0;
+  background: #80cbc4;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
 
 .skill-bar-percent {
-  position:absolute;
-  right:10px;
-  top:0;
-  font-size:11px;
-  height:35px;
-  line-height:35px;
-  color:#444;
-  color:rgba(0, 0, 0, 0.4);
-}
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #444;
+  color: rgba(0, 0, 0, 0.4); }
 
 /*myWork*/
-
 #myWorkContainer .row {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 .heading-container {
   width: 100%;
   margin: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
   padding: 0 -1em 0 0; }
   .heading-container a {
     color: #ffffff; }
-=======
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-  padding: 0 -1em 0 0;
-}
-
-.heading-container a {
-  color: #ffffff;
-}
-<<<<<<< HEAD
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .filter {
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 .portfolio-list {
   padding-top: 5em;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 .portfolio-card {
   position: relative;
   padding: 0;
   margin-bottom: 2em;
-  transition: all 1s;
-}
+  transition: all 1s; }
 
 .portfolio-info {
   position: absolute;
@@ -360,38 +227,23 @@ nav {
   width: 100%;
   height: 102%;
   opacity: 0;
-  padding: 10px;
-}
+  padding: 10px; }
 
 @media screen and (min-width: 471px) and (max-width: 899px) {
   .portfolio-info {
-    padding-top: 3.5em;
-  }
-}
-
+    padding-top: 3.5em; } }
 @media screen and (min-width: 401px) and (max-width: 470px) {
   .portfolio-info {
-    padding-top: 1em;
-  }
-}
-
-@media screen and (max-width: 400px){
+    padding-top: 1em; } }
+@media screen and (max-width: 400px) {
   .portfolio-info {
-    padding-top: 0;
-  }
-}
-
+    padding-top: 0; } }
 @media screen and (min-width: 900px) {
   .portfolio-info {
-    padding-top: 10%;
-  }
-}
-
+    padding-top: 10%; } }
 .portfolio-info ul li {
   padding-top: .5em;
   font-size: medium;
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: white; }
   .portfolio-info ul li a {
     vertical-align: middle;
@@ -406,36 +258,6 @@ nav {
     .portfolio-info ul li {
       padding-top: .5em;
       font-size: medium; } }
-=======
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-}
-
-.portfolio-info ul li a {
-  color: white;
-  vertical-align: middle;
-  padding: .3em .6em;
-  border-radius:5px;
-  opacity: 1;
-}
-
-.portfolio-info ul li a {
-  color: #80CBC4;
-}
-
-@media screen and (max-width: 601px) {
-  .portfolio-info ul {
-    padding-top: 1em;
-  }
-  .portfolio-info ul li {
-    padding-top: .5em;
-    font-size: medium;
-  }
-}
-<<<<<<< HEAD
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 /*Hover.css Animation*/
 /* Rectangle Out */
 .hvr-rectangle-out {
@@ -452,8 +274,6 @@ nav {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.15s;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transition-duration: 0.15s; }
   .hvr-rectangle-out:before {
     content: "";
@@ -473,69 +293,23 @@ nav {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out; }
 
-=======
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-  transition-duration: 0.15s;
-}
-.hvr-rectangle-out:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #455a64;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-<<<<<<< HEAD
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
   color: white;
-  opacity: .95;
-}
+  opacity: .95; }
+
 .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);
-  transform: scale(1);
-}
+  transform: scale(1); }
 
 /* Footer */
-
 .footer a {
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: #80cbc4; }
   .footer a:hover {
     color: white; }
-=======
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-  color: #80CBC4;
-}
-
-.footer a:hover {
-  color: white;
-}
-<<<<<<< HEAD
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
-=======
->>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .social-links a {
   margin-right: 2em;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .footer .row {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
