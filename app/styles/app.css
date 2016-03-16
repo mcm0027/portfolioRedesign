@@ -107,11 +107,14 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: 80vh; }
   .backgroundImage div {
     margin-left: 20vw;
     text-align: center; }
 =======
+=======
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
   min-height: 80vh;
 }
 
@@ -119,6 +122,9 @@ nav {
    margin-left: 20vw;
    text-align: center;
  }
+<<<<<<< HEAD
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
+=======
 >>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .backgroundImage h1 {
@@ -175,6 +181,7 @@ nav {
 
 .skillbar-title {
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: absolute;
   top: 0;
   left: 0;
@@ -201,6 +208,8 @@ nav {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px; }
 =======
+=======
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
   position:absolute;
   top:0;
   left:0;
@@ -229,6 +238,9 @@ nav {
   border-top-left-radius:3px;
   border-bottom-left-radius:3px;
 }
+<<<<<<< HEAD
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
+=======
 >>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .expert,
@@ -246,6 +258,7 @@ nav {
 .proficient .skillbar-title,
 .proficient .skillbar-bar {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: #ffc44d;
   width: 70%; }
 
@@ -253,6 +266,17 @@ nav {
 .familiar .skillbar-bar {
   background: #ffcd66;
   width: 60%; }
+=======
+  background: #ffc400;
+  width: 70%;
+}
+
+.familiar .skillbar-title,
+.familiar .skillbar-bar {
+  background: #ffd740;
+  width: 60%;
+}
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 =======
   background: #ffc400;
   width: 70%;
@@ -295,16 +319,22 @@ nav {
   width: 100%;
   margin: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 0 -1em 0 0; }
   .heading-container a {
     color: #ffffff; }
 =======
+=======
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
   padding: 0 -1em 0 0;
 }
 
 .heading-container a {
   color: #ffffff;
 }
+<<<<<<< HEAD
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
+=======
 >>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .filter {
@@ -361,6 +391,7 @@ nav {
   padding-top: .5em;
   font-size: medium;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: white; }
   .portfolio-info ul li a {
     vertical-align: middle;
@@ -376,6 +407,8 @@ nav {
       padding-top: .5em;
       font-size: medium; } }
 =======
+=======
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 }
 
 .portfolio-info ul li a {
@@ -399,6 +432,9 @@ nav {
     font-size: medium;
   }
 }
+<<<<<<< HEAD
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
+=======
 >>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 /*Hover.css Animation*/
 /* Rectangle Out */
@@ -416,6 +452,7 @@ nav {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.15s;
+<<<<<<< HEAD
 <<<<<<< HEAD
   transition-duration: 0.15s; }
   .hvr-rectangle-out:before {
@@ -437,6 +474,8 @@ nav {
     transition-timing-function: ease-out; }
 
 =======
+=======
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
   transition-duration: 0.15s;
 }
 .hvr-rectangle-out:before {
@@ -457,6 +496,9 @@ nav {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+<<<<<<< HEAD
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
+=======
 >>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 .hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
   color: white;
@@ -471,16 +513,22 @@ nav {
 
 .footer a {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #80cbc4; }
   .footer a:hover {
     color: white; }
 =======
+=======
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
   color: #80CBC4;
 }
 
 .footer a:hover {
   color: white;
 }
+<<<<<<< HEAD
+>>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
+=======
 >>>>>>> parent of 26b7e66... add sass compiler and begin converting css to sass
 
 .social-links a {
